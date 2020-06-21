@@ -32,7 +32,7 @@ def update_order(orderid, status):
 if __name__ == '__main__':
     imageid = 'ami-09d95fab7fff3776c'
     instancetype = 't2.micro'
-    response = add_order('0006', datetime.now().strftime("%d/%m/%Y %H:%M:%S"), imageid, instancetype, 'in-progress')
+    response = add_order('0006', datetime.now().strftime("%d/%m/%Y %H:%M:%S"), imageid, instancetype, 'in-progress', '')
     print(response)
     time.sleep(2)
     response = update_order('0006', 'complete')
